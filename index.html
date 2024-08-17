@@ -1,24 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
+    <script src="https://kit.fontawesome.com/8bc3e13147.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        'manrope': ["Manrope", "sans-serif"]
+                    }
+                }
             }
-          }
         }
     </script>
-    
+
 </head>
-<body>
-    
+
+<body class="font-manrope capitalize">
+    <main class="w-11/12 mx-auto  ">
+        <section id="hero" class=" grid grid-cols=2 md:grid-cols-2 sm:grid-cols-1  py-4 justify-between ">
+            <div class=" flex flex-col gap-8 text-left ">
+                <h1 class=" lg:text-7xl md:text-5xl text-4xl  font-extrabold">It's good <br>tea time at The <br> Tea House</h1>
+                <p class="text-sm lg:text-2xl  text-gray-400">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <button class=" text-white w-40 h-14 bg-gradient-to-r from-orange-400 to-red-700 ">Explore More <span><i class="-rotate-45 ml-2 fa-solid fa-arrow-right"></i></span></button>
+                
+            </div>
+            <div class="sm: mt-10 relative ">
+                <img src="images/banner.png" alt="cups">
+                <div class=" shadow shadow-black-400 bg-white flex gap-4 p-3.5 absolute bottom-8 md:left-16 lg:left-32 sm:left-32 rounded-sm ">
+                    <span class=" flex items-center justify-center text-center text-4xl text-yellow-400"><i class=" fa fa-star"></i></span>
+                    <div>
+                        <h2 class="text-2xl font-bold">5.00</h2>
+                        <p class="text-gray-400 text-sm">Trust Pilot Ratings</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
 </body>
+
 </html>
